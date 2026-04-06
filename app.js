@@ -120,36 +120,28 @@ const DATA = {
   timetable: [
     /* Day 1: 4월 20일 (월) */
     [
-      { time: '10:00\n~', title: '리조트 도착 및 체크인', detail: '안내 데스크 픽업 및 객실 배정', tags: ['arrival'], type: '' },
-      { time: '12:00', title: '점심 식사', detail: '리조트 식당 (단체 식사)', tags: ['meal'], type: 'meal' },
-      { time: '14:00\n~\n17:00', title: '등록 및 오리엔테이션', detail: '행사 등록 · 명찰 수령 · 전체 안내\n장소: 컨퍼런스홀 A', tags: [], type: '' },
-      { time: '17:00\n~\n18:00', title: '자유 시간', detail: '리조트 시설 이용 · 산책 · 담소', tags: ['free'], type: 'free' },
-      { time: '18:00', title: '저녁 식사', detail: '리조트 식당 (단체 식사)', tags: ['meal'], type: 'meal' },
-      { time: '19:30\n~\n21:30', title: '1부 저녁 집회', detail: '찬양 · 말씀 · 기도\n장소: 대강당\n설교: 담임목사 (성서침례교회)', tags: ['worship'], type: 'highlight' },
-      { time: '21:30\n~\n23:00', title: '친교의 밤', detail: '지역별 모임 · 차와 다과 · 교제\n장소: 로비 및 라운지', tags: ['free'], type: '' },
+      { time: '15:00\n~\n17:30', title: '등록 및 접수', detail: '로비 및 안내 데스크', tags: ['arrival'], type: '' },
+      { time: '17:30\n~\n18:40', title: '저녁 식사', detail: '리조트 식당', tags: ['meal'], type: 'meal' },
+      { time: '19:00\n~\n21:00', title: '저녁 집회', detail: '찬양 · 특송 · 말씀\n설교: 김경석 목사\n장소: 대강당', tags: ['worship'], type: 'highlight' },
+      { time: '21:00\n~\n22:30', title: '사무회의', detail: '참석 대상: 소속 목회자 전체\n장소: 대강당', tags: ['meeting'], type: '' }
     ],
     /* Day 2: 4월 21일 (화) */
     [
-      { time: '06:30\n~\n07:30', title: '새벽 기도회', detail: '자유 참여 · 중보기도 · 묵상\n장소: 채플실', tags: ['worship'], type: 'highlight' },
-      { time: '07:30', title: '아침 식사', detail: '리조트 식당 (단체 식사)', tags: ['meal'], type: 'meal' },
-      { time: '09:00\n~\n10:30', title: '전체 회의 1부', detail: '안건 보고 · 지역별 현황 공유\n장소: 컨퍼런스홀 A', tags: ['meeting'], type: '' },
-      { time: '10:30\n~\n10:50', title: '커피 브레이크', detail: '휴식 및 담소', tags: ['free'], type: 'free' },
-      { time: '10:50\n~\n12:00', title: '전체 회의 2부', detail: '향후 사역 방향 논의 · 분과별 발표\n장소: 컨퍼런스홀 A', tags: ['meeting'], type: '' },
-      { time: '12:00', title: '점심 식사', detail: '리조트 식당 (단체 식사)', tags: ['meal'], type: 'meal' },
-      { time: '14:00\n~\n16:00', title: '분과 모임', detail: '지역별 · 사역별 소그룹 모임\n각 소회의실 활용', tags: ['meeting'], type: '' },
-      { time: '16:00\n~\n17:30', title: '자유 시간 & 레크리에이션', detail: '수영장 · 스파 · 경주 주변 관광\n(선택 사항)', tags: ['free'], type: 'free' },
-      { time: '18:00', title: '저녁 식사', detail: '특별 만찬 (리조트 연회장)', tags: ['meal'], type: 'meal' },
-      { time: '19:30\n~\n21:30', title: '2부 저녁 집회', detail: '찬양 · 말씀 · 성찬식\n장소: 대강당\n설교: 초청 강사', tags: ['worship'], type: 'highlight' },
-      { time: '21:30', title: '지역별 교제 모임', detail: '지역담당자 주관 소모임\n라운지 및 객실', tags: ['free'], type: '' },
+      { time: '07:30\n~\n08:30', title: '아침 식사', detail: '리조트 식당', tags: ['meal'], type: 'meal' },
+      { time: '08:30\n~\n17:30', title: '자유시간', detail: '(지역친교회 별로 시간 활용)', tags: ['free'], type: 'free' },
+      { time: '17:30\n~\n18:40', title: '저녁 식사', detail: '리조트 식당', tags: ['meal'], type: 'meal' },
+      { time: '19:00\n~\n21:00', title: '저녁 집회', detail: '찬양 · 특송 · 말씀\n설교: 오성현 목사\n장소: 대강당', tags: ['worship'], type: 'highlight' },
+      { time: '21:00\n~\n22:30', title: '동문회', detail: '해당자 참석', tags: ['meeting'], type: '' }
     ],
     /* Day 3: 4월 22일 (수) */
     [
-      { time: '06:30\n~\n07:30', title: '새벽 기도회', detail: '합심 기도 · 마무리 묵상\n장소: 채플실', tags: ['worship'], type: 'highlight' },
-      { time: '07:30', title: '아침 식사', detail: '리조트 식당 (단체 식사)', tags: ['meal'], type: 'meal' },
-      { time: '09:00\n~\n10:30', title: '임원회의 & 결산 보고', detail: '임원진 회의 · 결산 보고 · 차기 행사 논의\n장소: 소회의실 B', tags: ['meeting'], type: '' },
-      { time: '10:30\n~\n11:30', title: '3부 마지막 집회', detail: '나눔과 간증 · 파송 기도회\n장소: 대강당', tags: ['worship'], type: 'highlight' },
-      { time: '11:30\n~\n12:00', title: '폐회 및 기념 촬영', detail: '단체 기념 사진 촬영\n리조트 야외 광장', tags: [], type: '' },
-      { time: '12:00', title: '점심 식사 및 체크아웃', detail: '마지막 식사 후 체크아웃\n안전한 귀가를 기원합니다 🙏', tags: ['meal'], type: 'meal' },
+      { time: '07:30\n~\n08:30', title: '아침 식사', detail: '리조트 식당', tags: ['meal'], type: 'meal' },
+      { time: '09:30\n~\n10:50', title: '오전 집회 및 강의 1', detail: '강의: 박창신 목사\n장소: 대강당', tags: ['worship'], type: 'highlight' },
+      { time: '10:50\n~\n11:00', title: '휴식', detail: '잠시 쉬어갑니다', tags: ['free'], type: 'free' },
+      { time: '11:00\n~\n11:50', title: '특송 및 강의 2', detail: '특송: 캄보디아 사역팀\n강의: 박창신 목사 / 폐회기도', tags: ['worship'], type: 'highlight' },
+      { time: '12:00\n~\n13:00', title: '점심식사', detail: '리조트 식당', tags: ['meal'], type: 'meal' },
+      { time: '13:00\n~\n15:00', title: '전국친교회운영위원회', detail: '지정 회의실', tags: ['meeting'], type: '' },
+      { time: '15:00\n~', title: '집으로', detail: '안전한 귀가를 기원합니다 🙏', tags: [], type: '' }
     ]
   ],
 
@@ -157,58 +149,56 @@ const DATA = {
   meetings: [
     {
       icon: '🙏',
-      title: '전체 집회',
-      sub: '저녁 19:30 · 대강당',
+      title: '월요일 저녁 집회',
+      sub: '4/20(월) 19:00 · 대강당',
       details: [
-        { icon: '📅', label: '일정', text: '<strong>1부</strong> 4/20(월) 19:30 · <strong>2부</strong> 4/21(화) 19:30 · <strong>3부</strong> 4/22(수) 10:30' },
-        { icon: '📍', label: '장소', text: '<strong>리조트 대강당</strong> (수용 인원: 300명)' },
-        { icon: '🎵', label: '찬양', text: '찬양팀 인도 · 통성기도·묵상기도 포함' },
-        { icon: '📖', label: '설교', text: '1부: 담임목사 / 2부: 초청강사 / 3부: 나눔 및 파송기도' },
-        { icon: '🕯', label: '특이사항', text: '2부 집회 시 <strong>성찬식</strong> 진행 예정' }
+        { icon: '🎙', label: '사회', text: '경인친교회 문정용 목사' },
+        { icon: '🎵', label: '찬송', text: '찬양팀 인도' },
+        { icon: '🙏', label: '개회기도', text: '박창신 목사' },
+        { icon: '💰', label: '헌금기도', text: '정민철 목사' },
+        { icon: '🎤', label: '특송', text: '경인친교회 목사님/사모님' },
+        { icon: '📖', label: '설교', text: '<strong>김경석 목사</strong>' },
+        { icon: '🙏', label: '폐회기도', text: '여우석 목사' }
       ]
     },
     {
-      icon: '📋',
-      title: '전체 회의',
-      sub: '4월 21일(화) 09:00 · 컨퍼런스홀 A',
+      icon: '🙌',
+      title: '화요일 저녁 집회',
+      sub: '4/21(화) 19:00 · 대강당',
       details: [
-        { icon: '📅', label: '일정', text: '<strong>1부</strong> 09:00~10:30 · <strong>2부</strong> 10:50~12:00' },
-        { icon: '📍', label: '장소', text: '<strong>컨퍼런스홀 A</strong> (1층)' },
-        { icon: '📌', label: '안건', text: '• 지역별 사역 현황 보고<br>• 2026년 사역 방향 논의<br>• 다음 친교회 일정 조율' },
-        { icon: '👤', label: '진행', text: '총무 인도 · 각 지역 대표 발언' }
+        { icon: '🎙', label: '사회', text: '영남친교회 전용재 목사' },
+        { icon: '🎵', label: '찬송', text: '찬양팀 인도' },
+        { icon: '🙏', label: '개회기도', text: '정재화 목사' },
+        { icon: '💰', label: '헌금기도', text: '김구섭 목사' },
+        { icon: '🎤', label: '특송', text: '경원친교회 사모님' },
+        { icon: '📖', label: '설교', text: '<strong>오성현 목사</strong>' },
+        { icon: '🙏', label: '폐회기도', text: '손덕철 목사' }
       ]
     },
     {
-      icon: '🤝',
-      title: '분과 모임',
-      sub: '4월 21일(화) 14:00 · 소회의실',
+      icon: '📝',
+      title: '수요일 오전 집회 및 강의',
+      sub: '4/22(수) 09:30 · 대강당',
       details: [
-        { icon: '📅', label: '일정', text: '4/21(화) 14:00~16:00 (2시간)' },
-        { icon: '📍', label: '장소', text: '소회의실 A·B·C·D (층별 안내)' },
-        { icon: '📌', label: '분과', text: '• 지역별 그룹 (영남/호남/수도권/충청)<br>• 청년 목회자 모임<br>• 부부 동반 모임' },
-        { icon: '📝', label: '내용', text: '사역 나눔 · 기도 제목 공유 · 중보 기도' }
+        { icon: '🎙', label: '사회', text: '김두성 목사' },
+        { icon: '🎵', label: '찬송', text: '찬양팀 인도' },
+        { icon: '🙏', label: '개회기도', text: '강효민 목사' },
+        { icon: '💡', label: '강의 1', text: '박창신 목사 (09:30~10:50)' },
+        { icon: '☕', label: '휴식', text: '10:50~11:00' },
+        { icon: '🎤', label: '특송', text: '캄보디아 사역팀 (11:00~11:05)' },
+        { icon: '💡', label: '강의 2', text: '박창신 목사 (11:05~11:50)' },
+        { icon: '🙏', label: '폐회기도', text: '유봉호 목사' }
       ]
     },
     {
       icon: '⚙️',
-      title: '임원회의',
-      sub: '4월 22일(수) 09:00 · 소회의실 B',
+      title: '기관 모임 안내',
+      sub: '일정에 맞춰 지정 장소에서 진행',
       details: [
-        { icon: '📅', label: '일정', text: '4/22(수) 09:00~10:30' },
-        { icon: '📍', label: '장소', text: '<strong>소회의실 B</strong> (2층)' },
-        { icon: '👥', label: '참석', text: '회장·부회장·총무·회계·각 지역 대표' },
-        { icon: '📌', label: '안건', text: '결산 보고 · 차기 행사 계획 · 임원진 안건' }
-      ]
-    },
-    {
-      icon: '🌅',
-      title: '새벽 기도회',
-      sub: '매일 06:30 · 채플실 (자유 참여)',
-      details: [
-        { icon: '📅', label: '일정', text: '4/21(화), 4/22(수) 06:30~07:30' },
-        { icon: '📍', label: '장소', text: '<strong>채플실</strong> (B1층)' },
-        { icon: '📌', label: '내용', text: '개인 기도 · 합심 기도 · 말씀 묵상' },
-        { icon: 'ℹ️', label: '안내', text: '자유 참여 (필수 아님) · 조용한 묵상 시간' }
+        { icon: '🏫', label: '운영이사회', text: '신학교 운영이사회: 4/20(월) 오후 3시' },
+        { icon: '📋', label: '사무회의', text: '4/20(월) 오후 9시 (대강당)' },
+        { icon: '🎓', label: '동문회', text: '4/21(화) 오후 9시 (해당자)' },
+        { icon: '⚙️', label: '운영위원회', text: '전국친교회운영위원회: 4/22(수) 오후 1시' }
       ]
     }
   ],
@@ -4193,15 +4183,11 @@ const DATA = {
   /* 앨범 */
   albumCategories: ['전체', '집회', '회의', '교제', '풍경'],
   albumItems: [
-    { id: 1, cat: '집회', emoji: '🙏', label: '1부 저녁집회', color: 1 },
-    { id: 2, cat: '교제', emoji: '😊', label: '친교의 밤', color: 2 },
-    { id: 3, cat: '풍경', emoji: '🌊', label: '리조트 전경', color: 3 },
-    { id: 4, cat: '회의', emoji: '📋', label: '전체회의', color: 4 },
-    { id: 5, cat: '집회', emoji: '✝️', label: '성찬식', color: 5 },
-    { id: 6, cat: '교제', emoji: '🍽️', label: '만찬', color: 6 },
-    { id: 7, cat: '풍경', emoji: '🌅', label: '경주 일출', color: 7 },
-    { id: 8, cat: '교제', emoji: '📸', label: '단체사진', color: 8 },
-    { id: 9, cat: '집회', emoji: '🎵', label: '찬양시간', color: 9 },
+    { id: 1, cat: '집회', img: 'album1.png', label: '1부 저녁집회 현장', date: '4/20' },
+    { id: 2, cat: '풍경', img: 'album2.png', label: '경주 성호리조트 전경', date: '4/20' },
+    { id: 3, cat: '교제', img: 'album1.png', label: '목회자 친교의 시간', date: '4/21' },
+    { id: 4, cat: '회의', img: 'album2.png', label: '전국친교회 사무회의', date: '4/20' },
+    { id: 5, cat: '기타', img: 'album1.png', label: '기념 단체사진', date: '4/22' },
   ]
 };
 
@@ -4382,140 +4368,148 @@ function buildMeetings() {
 }
 
 /* ==================================
-   BUILD FACILITY + ROOMS
+   BUILD FACILITY + ROOMS (Visual Map)
    ================================== */
 function buildRooms() {
-  buildFacilityMap();
-  renderRoomList('');
-}
-
-function buildFacilityMap() {
-  const container = document.getElementById('facilityMap');
+  const container = document.getElementById('visualFacilityMap');
   if (!container) return;
 
-  container.innerHTML = `
-    <div class="facility-map-visual" style="min-height: 340px; position: relative;">
-      <!-- Map label -->
-      <div style="text-align:center; margin-bottom: 16px; position: relative; z-index: 2;">
-        <span style="font-size:0.8rem; color:var(--accent-light); font-weight:700; letter-spacing:.05em;">경주 성호리조트 배치도</span>
+  // DATA.rooms is grouped by building. Flatten it for easier processing.
+  let allRooms = [];
+  if (DATA.rooms && DATA.rooms.length > 0) {
+    if (DATA.rooms[0].rooms) {
+      DATA.rooms.forEach(b => allRooms.push(...b.rooms));
+    } else {
+      allRooms = DATA.rooms;
+    }
+  }
+
+  let html = `<div class="v-map-wrapper">`;
+
+  // --- 분관 (별관동) ---
+  html += `
+    <div class="v-building-card">
+      <div class="v-building-header annex-bg">
+        <span class="v-building-icon">🏢</span>
+        <div>
+          <h4>별관동 (Annex)</h4>
+          <p>2층~6층 객실</p>
+        </div>
       </div>
+      <div class="v-building-body">
+  `;
+  for(let fl = 6; fl >= 2; fl--) {
+    let roomsInFloor = allRooms.filter(r => r.building === '별관' && r.number && r.number.startsWith(`2${fl}`));
+    roomsInFloor.sort((a,b) => parseInt(a.number) - parseInt(b.number));
+    html += generateFloorRow(`${fl}F`, roomsInFloor);
+  }
+  html += `</div></div>`;
 
-      <!-- 리조트 구역 -->
-      <div style="position: relative; width: 100%; height: 260px;">
-
-        <!-- 대강당 -->
-        <div class="f-building highlight" style="left:5%; top:5%; width:40%; height:20%;" onclick="showBuildingInfo('대강당')">
-          <span>🏛️</span><span>대강당</span>
+  // --- 본관 (본관동) ---
+  html += `
+    <div class="v-building-card">
+      <div class="v-building-header main-bg">
+        <span class="v-building-icon">🏨</span>
+        <div>
+          <h4>본관동 (Main)</h4>
+          <p>2층~7층 객실 / 1층 프런트</p>
         </div>
+      </div>
+      <div class="v-building-body">
+  `;
+  for(let fl = 7; fl >= 2; fl--) {
+    let roomsInFloor = allRooms.filter(r => r.building === '본관' && r.number && r.number.startsWith(`1${fl}`));
+    roomsInFloor.sort((a,b) => parseInt(a.number) - parseInt(b.number));
+    html += generateFloorRow(`${fl}F`, roomsInFloor);
+  }
+  html += `</div></div>`;
 
-        <!-- 컨퍼런스홀 -->
-        <div class="f-building" style="right:5%; top:5%; width:40%; height:18%;" onclick="showBuildingInfo('컨퍼런스홀')">
-          <span>📋</span><span>컨퍼런스홀</span>
-        </div>
+  html += `</div>`; // v-map-wrapper
 
-        <!-- A동 -->
-        <div class="f-building" style="left:5%; top:30%; width:27%; height:22%;" onclick="showBuildingInfo('A동')">
-          <span>🏨</span><span>A동 (VIP)</span>
-        </div>
+  container.innerHTML = html;
+}
 
-        <!-- B동 -->
-        <div class="f-building" style="left:36%; top:30%; width:27%; height:22%;" onclick="showBuildingInfo('B동')">
-          <span>🏨</span><span>B동</span>
-        </div>
-
-        <!-- C동 -->
-        <div class="f-building" style="right:5%; top:30%; width:27%; height:22%;" onclick="showBuildingInfo('C동')">
-          <span>🏨</span><span>C동</span>
-        </div>
-
-        <!-- 식당 -->
-        <div class="f-building" style="left:5%; top:57%; width:27%; height:18%;" onclick="showBuildingInfo('식당')">
-          <span>🍽️</span><span>식 당</span>
-        </div>
-
-        <!-- 채플 -->
-        <div class="f-building" style="left:36%; top:57%; width:27%; height:18%;" onclick="showBuildingInfo('채플실')">
-          <span>✝️</span><span>채플실</span>
-        </div>
-
-        <!-- 편의시설 -->
-        <div class="f-building" style="right:5%; top:57%; width:27%; height:18%;" onclick="showBuildingInfo('편의시설')">
-          <span>🏊</span><span>스파/수영</span>
-        </div>
-
-        <!-- 입구 -->
-        <div style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); font-size:0.65rem; color:var(--accent-light); font-weight:700; background:rgba(201,162,39,0.15); padding: 4px 12px; border-radius:6px; border:1px solid rgba(201,162,39,0.3);">
-          ↑ 입구 / 주차장
-        </div>
+function generateFloorRow(floorLabel, rooms) {
+  if (rooms.length === 0) return '';
+  return `
+    <div class="v-floor-row">
+      <div class="v-floor-label">${floorLabel}</div>
+      <div class="v-floor-rooms">
+        ${rooms.map(r => generateRoomBox(r)).join('')}
       </div>
     </div>
   `;
 }
 
-function showBuildingInfo(name) {
-  const info = {
-    '대강당': '수용 300명 · 전체 집회 장소 · 음향/영상 시설 완비',
-    '컨퍼런스홀': '컨퍼런스홀 A (120명) · 소회의실 B·C·D · 전체 회의 장소',
-    'A동': 'A동 201~206호 · VIP / 가족실 · 6개 객실',
-    'B동': 'B동 301~308호 · 일반 / 2인실 · 8개 객실',
-    'C동': 'C동 401~406호 · 스탭 / 청년목회자 · 5개 객실',
-    '식당': '조·중·석식 단체 식사 · 수용 200명',
-    '채플실': '새벽 기도회 · 개인 묵상 · B1층 위치',
-    '편의시설': '실내 수영장 · 사우나/스파 · 헬스장'
-  };
+function generateRoomBox(room) {
+  const namesHtml = room.residents.map(p => {
+    let rBadge = '';
+    // 역할에 따른 짧은 뱃지
+    if (p.role === 'pastor') rBadge = '<span class="rv-role p">목사</span>';
+    else if (p.role === 'spouse') rBadge = '<span class="rv-role s">사모</span>';
+    else if (p.role === '가족') rBadge = '<span class="rv-role f">가족</span>';
+    return `<div class="rv-person">${rBadge}${p.name}</div>`;
+  }).join('');
 
-  const modal = document.getElementById('noticeModal');
-  const content = document.getElementById('noticeModalContent');
-  content.innerHTML = `
-    <div style="text-align:center; padding: 10px 0 16px;">
-      <div style="font-size:2.5rem; margin-bottom:10px;">🏨</div>
-      <div class="notice-modal-title">${name}</div>
-      <p style="font-size:0.83rem; color:var(--text-muted); margin-top:8px; line-height:1.6;">${info[name] || ''}</p>
+  const isEmpty = room.residents.length === 0;
+
+  return `
+    <div class="v-room-box ${isEmpty ? 'r-empty' : ''}">
+      <div class="v-room-num">${room.number}</div>
+      <div class="v-room-names">
+        ${namesHtml || '<span style="color:rgba(255,255,255,0.3); font-size:0.6rem;">(배정 예정)</span>'}
+      </div>
     </div>
   `;
-  modal.classList.add('show');
 }
 
-function renderRoomList(query) {
-  const container = document.getElementById('roomList');
-  if (!container) return;
-
-  const q = query.toLowerCase();
-  let html = '';
-
-  DATA.rooms.forEach(building => {
-    const filtered = building.rooms.filter(room => {
-      if (!q) return true;
-      return room.name || room.residents.some(r =>
-        r.name.includes(q) || r.church.toLowerCase().includes(q)
-      );
+function searchRoom(query) {
+  const q = query.trim().toLowerCase();
+  const rooms = document.querySelectorAll('.v-room-box');
+  
+  if (q.length === 0) {
+    rooms.forEach(r => {
+      r.style.opacity = '1';
+      r.style.transform = 'scale(1)';
+      r.style.boxShadow = 'none';
+      r.classList.remove('highlighted');
     });
+    return;
+  }
 
-    if (filtered.length === 0) return;
+  let foundRooms = 0;
+  rooms.forEach(r => {
+    const text = r.innerText.toLowerCase();
+    
+    // We also search through actual data to support church name search
+    const roomNum = r.querySelector('.v-room-num').innerText;
+    const roomData = DATA.rooms.find(x => x.number === roomNum);
+    let matchInChurch = false;
+    if(roomData) {
+      matchInChurch = roomData.residents.some(res => res.church && res.church.toLowerCase().includes(q));
+    }
 
-    html += `<div class="room-building-group">
-      <div class="room-building-title" style="color:${building.color};">${building.building}</div>
-      ${filtered.map(room => `
-        <div class="room-item">
-          <div class="room-number">${room.number}</div>
-          <div class="room-people">
-            ${room.residents.map(r => `
-              <div class="room-person">${r.name}</div>
-              <div class="room-church">${r.church}${r.role ? ' · ' + r.role : ''}</div>
-            `).join('<div style="height:4px"></div>')}
-          </div>
-          <div class="room-count">${room.residents.length}명</div>
-        </div>
-      `).join('')}
-    </div>`;
+    if (text.includes(q) || matchInChurch) {
+      r.style.opacity = '1';
+      r.style.transform = 'scale(1.05)';
+      r.style.boxShadow = '0 0 0 2px var(--primary)';
+      r.classList.add('highlighted');
+      
+      if(foundRooms === 0) {
+        // Scroll to the first found room smoothly
+        r.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+      }
+      foundRooms++;
+    } else {
+      r.style.opacity = '0.3';
+      r.style.transform = 'scale(1)';
+      r.style.boxShadow = 'none';
+      r.classList.remove('highlighted');
+    }
   });
-
-  container.innerHTML = html || '<div class="search-empty-state">검색 결과가 없습니다 🔍</div>';
 }
 
-function searchRoom(val) {
-  renderRoomList(val);
-}
+
 
 /* ==================================
    BUILD ATTENDEES
@@ -4524,16 +4518,38 @@ function buildAttendees() {
   // Stats
   const stats = document.getElementById('attendeeStats');
   if (stats) {
-    const totalPastors = DATA.attendees.filter(a => a.role === 'pastor').length;
-    const totalSpouses = DATA.attendees.filter(a => a.role === 'spouse').length;
-    const totalStaff = DATA.attendees.filter(a => a.role === 'staff').length;
-    const total = DATA.attendees.length;
+    let totalPastors = 0;
+    let totalSpouses = 0;
+    let totalStaff = 0;
+    let total = 0;
+
+    DATA.attendees.forEach(a => {
+      if (a.name.includes('부부')) {
+        totalPastors += 1;
+        totalSpouses += 1;
+        total += 2;
+      } else if (a.name.includes('가족')) {
+        totalPastors += 1;
+        totalSpouses += 1;
+        totalStaff += 2; // 자녀 2명은 '기타'에 포함
+        total += 4; // 가족은 보통 4인 기준으로 합산
+      } else {
+        if (a.role === 'pastor') {
+          totalPastors += 1;
+        } else if (a.role === 'spouse') {
+          totalSpouses += 1;
+        } else if (a.role === 'staff') {
+          totalStaff += 1;
+        }
+        total += 1;
+      }
+    });
 
     stats.innerHTML = `
       <div class="stat-box"><div class="stat-num">${total}</div><div class="stat-label">총 참석자</div></div>
       <div class="stat-box"><div class="stat-num">${totalPastors}</div><div class="stat-label">목사</div></div>
-      <div class="stat-box"><div class="stat-num">${totalSpouses}</div><div class="stat-label">배우자</div></div>
-      <div class="stat-box"><div class="stat-num">${totalStaff}</div><div class="stat-label">스탭</div></div>
+      <div class="stat-box"><div class="stat-num">${totalSpouses}</div><div class="stat-label">사모</div></div>
+      <div class="stat-box"><div class="stat-num">${totalStaff}</div><div class="stat-label">기타</div></div>
     `;
   }
 
@@ -4714,11 +4730,17 @@ function renderAlbumGrid(cat) {
 
   const items = cat === '전체' ? DATA.albumItems : DATA.albumItems.filter(i => i.cat === cat);
 
+  if (items.length === 0) {
+    container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-dim);">검색된 사진이 없습니다.</div>';
+    return;
+  }
+
   container.innerHTML = items.map(item => `
     <div class="album-thumb" onclick="openPhoto(${item.id})">
-      <div class="album-thumb-img album-color-${item.color}" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;">
-        <span style="font-size:2.5rem;">${item.emoji}</span>
-        <span style="font-size:0.55rem;color:rgba(255,255,255,0.8);font-weight:600;">${item.label}</span>
+      <img src="${item.img}" class="album-thumb-img" loading="lazy" />
+      <div class="album-thumb-cat">${item.cat}</div>
+      <div class="album-thumb-info">
+        <div>${item.label}</div>
       </div>
     </div>
   `).join('');
@@ -4730,12 +4752,15 @@ function openPhoto(id) {
 
   const content = document.getElementById('photoModalContent');
   content.innerHTML = `
-    <div style="text-align:center; padding: 20px;">
-      <div style="font-size:5rem; margin-bottom:16px;">${item.emoji}</div>
-      <p style="color:white;font-size:1rem;font-weight:600;">${item.label}</p>
-      <p style="color:rgba(255,255,255,0.5);font-size:0.75rem;margin-top:6px;">${item.cat}</p>
-      <div style="margin-top:20px;padding:16px;background:rgba(255,255,255,0.05);border-radius:12px;">
-        <p style="color:rgba(255,255,255,0.6);font-size:0.78rem;">📸 실제 사진이 곧 업로드됩니다.<br/>담당자에게 카카오톡으로 공유해 주세요!</p>
+    <div style="background:black; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+      <img src="${item.img}" style="width:100%; max-height:75vh; object-fit:contain; animation: zoomIn 0.3s ease-out;" />
+      <div style="padding: 24px; width:100%; color:white; background:linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
+        <div style="font-size:1.1rem; font-weight:700; margin-bottom:4px;">${item.label}</div>
+        <div style="font-size:0.8rem; color:rgba(255,255,255,0.6);">${item.cat} · ${item.date || ''}</div>
+        <div style="margin-top:20px; display:flex; gap:10px;">
+          <button class="upload-btn" style="flex:1; justify-content:center; background:rgba(255,255,255,0.15);" onclick="alert('📸 사진 저장 기능은 브라우저 메뉴를 이용해 주세요.')">저장하기</button>
+          <button class="upload-btn" style="flex:1; justify-content:center;" onclick="closeModal('photoModal')">닫기</button>
+        </div>
       </div>
     </div>
   `;

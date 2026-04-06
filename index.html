@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>전국목회자 친교회 | 경주 성호리조트 2026</title>
+  <title>춘계 전국목회자 친교회 | 경주 성호리조트 2026</title>
   <meta name="description" content="성서침례교회 전국목회자 친교회 행사 안내 - 2026년 4월 20~22일, 경주 성호리조트" />
+  <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -16,7 +17,7 @@
 <div id="splash" class="splash">
   <div class="splash-inner">
     <div class="splash-cross">✝</div>
-    <h1 class="splash-title">전국목회자<br/>친교회</h1>
+    <h1 class="splash-title">춘계 전국목회자<br/>친교회</h1>
     <p class="splash-sub">성서침례교회</p>
     <div class="splash-loader">
       <div class="loader-bar"></div>
@@ -32,11 +33,14 @@
     <div class="header-left">
       <span class="header-cross">✝</span>
       <div>
-        <p class="header-title">전국목회자 친교회</p>
+        <p class="header-title">춘계 전국목회자 친교회</p>
         <p class="header-sub">성서침례교회 · 2026</p>
       </div>
     </div>
     <div class="header-right">
+      <button class="header-icon-btn" onclick="showPage('search')" title="검색">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
       <button class="notif-btn" id="notifBtn" onclick="showPage('notices')">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
         <span class="notif-badge" id="notifBadge">3</span>
@@ -56,8 +60,8 @@
         <div class="hero-bg"></div>
         <div class="hero-content">
           <div class="hero-badge">2026 · GYEONGJU</div>
-          <h2 class="hero-title">전국목회자<br/>친교회</h2>
-          <p class="hero-verse">"형제가 연합하여 동거함이 어찌 그리 선하고 아름다운고"<br/><span>시편 133:1</span></p>
+          <h2 class="hero-title">춘계 전국목회자<br/>친교회</h2>
+          <p class="hero-verse">"The Bridge: 세대와 시대를 잇는 목회"<br/><span>2026년 춘계 전국목회자 친교회</span></p>
           <div class="hero-info-chips">
             <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 4.20(월)~22(수)</span>
             <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 경주 성호리조트</span>
@@ -115,7 +119,7 @@
         <div class="info-card">
           <div class="info-row">
             <span class="info-label">행사명</span>
-            <span class="info-value">성서침례교회 전국목회자 친교회</span>
+            <span class="info-value">성서침례교회 춘계 전국목회자 친교회</span>
           </div>
           <div class="info-row">
             <span class="info-label">일시</span>
@@ -131,7 +135,7 @@
           </div>
           <div class="info-row" style="border:none">
             <span class="info-label">주제</span>
-            <span class="info-value highlight-gold">"형제가 연합하여 동거함이<br/>어찌 그리 선하고 아름다운고"<br/><small>— 시편 133:1</small></span>
+            <span class="info-value highlight-gold">"The Bridge: 세대와 시대를 잇는 목회"<br/><small>— 2026 춘계</small></span>
           </div>
         </div>
       </div>
@@ -212,18 +216,16 @@
       </div>
 
       <!-- Facility Map -->
-      <div class="section-container">
-        <h3 class="section-title">시설 배치도</h3>
-        <div class="facility-map" id="facilityMap"></div>
-      </div>
-
-      <!-- Room List -->
-      <div class="section-container">
-        <h3 class="section-title">동별 숙소 안내</h3>
-        <div class="room-search-wrap">
+      <!-- Facility Map & Room Grid -->
+      <div class="section-container" style="overflow-x: hidden; padding: 16px 0;">
+        <h3 class="section-title" style="padding: 0 16px;">단면도 및 배정 명단</h3>
+        <p style="padding: 0 16px; font-size:0.75rem; color:var(--text-muted); margin-top:-10px; margin-bottom:12px;">좌우로 스크롤하여 방별 투숙객을 확인할 수 있습니다.</p>
+        <div class="room-search-wrap" style="padding: 0 16px; margin-bottom: 20px;">
           <input type="text" id="roomSearchInput" class="search-input" placeholder="이름 또는 교회명으로 검색..." oninput="searchRoom(this.value)" />
         </div>
-        <div id="roomList"></div>
+        
+        <!-- The visual map container -->
+        <div id="visualFacilityMap" style="overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 0 16px;"></div>
       </div>
     </section>
 
@@ -267,14 +269,19 @@
     <!-- ============================= -->
     <section class="page" id="page-album">
       <div class="page-header">
-        <h2 class="page-h2">행사 앨범</h2>
-        <p class="page-desc">소중한 순간들을 담았습니다</p>
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <h2 class="page-h2">행사 앨범</h2>
+            <p class="page-desc">함께 나누는 은혜의 순간들</p>
+          </div>
+          <button class="upload-btn" onclick="alert('📸 사진 업로드 기능은 실제 행사 중 오픈됩니다!')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            업로드
+          </button>
+        </div>
       </div>
-
-      <!-- Album Category -->
-      <div class="album-cats" id="albumCats"></div>
-
-      <!-- Album Grid -->
+      
+      <div class="filter-tabs" id="albumCats"></div>
       <div class="album-grid" id="albumGrid"></div>
 
       <!-- Upload Notice -->
@@ -330,9 +337,9 @@
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       <span>숙소</span>
     </button>
-    <button class="nav-item" id="nav-search" onclick="showPage('search')">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <span>검색</span>
+    <button class="nav-item" id="nav-notices" onclick="showPage('notices')">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+      <span>공지사항</span>
     </button>
   </nav>
 
