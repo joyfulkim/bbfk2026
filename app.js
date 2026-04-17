@@ -4199,6 +4199,25 @@ const DATA = {
 ],
 
   /* 앨범 */
+  /* 부산 숙소 배치 (AG405호텔 2026.04.22~23) */
+  busanRooms: [
+    { floor: '5F', number: '501', type: 'DO', name: '리영규 목사님', church: '규정성서침례교회', phone: '010-2568-4260', car: '74버 4828', arrival: '4/22', departure: '4/23' },
+    { floor: '5F', number: '502', type: 'DO', name: '심재혁 목사님', church: '낙지교회', phone: '010-8449-9002', car: '72나 6353', arrival: '4/22', departure: '4/23' },
+    { floor: '5F', number: '503', type: 'DO', name: '이명규 목사님', church: '서서울성서침례교회', phone: '010-5464-8404', car: '36구 7581', arrival: '4/22', departure: '4/23' },
+    { floor: '5F', number: '506', type: 'DT', name: '김길석 목사님', church: '강서침례교회', phone: '010-9179-9126', car: '67소 7303', arrival: '4/22', departure: '4/23' },
+    { floor: '5F', number: '507', type: 'DT', name: '김명은 목사님', church: '잠이없는교회', phone: '010-4899-0191', car: '265구 9666', arrival: '4/22', departure: '4/25' },
+    { floor: '6F', number: '601', type: 'DO', name: '이은철 목사님', church: '하늘빛기쁨교회', phone: '010-8469-0191', car: '50수 9491', arrival: '4/22', departure: '4/23' },
+    { floor: '6F', number: '602', type: 'DO', name: '이접삼 목사님', church: '비전성서침례교회', phone: '', car: '', arrival: '4/22', departure: '4/23' },
+    { floor: '6F', number: '603', type: 'DO', name: '장창표 목사님', church: '주레침례교회', phone: '', car: '', arrival: '4/22', departure: '4/23' },
+    { floor: '6F', number: '606', type: 'DT', name: '이승혁 목사님', church: '서울강서침례교회', phone: '010-4563-2769', car: '57주 8603', arrival: '4/22', departure: '4/23' },
+    { floor: '6F', number: '607', type: 'DT', name: '임흥섭 전도목사님', church: '한우리침례교회', phone: '', car: '', arrival: '4/22', departure: '4/23' },
+    { floor: '7F', number: '701', type: 'DO', name: '유명현 목사님', church: '하계세화가는교회', phone: '010-7192-9134', car: '11두 9477', arrival: '4/22', departure: '4/23' },
+    { floor: '7F', number: '702', type: 'DO', name: '유병현 목사님', church: '하계세화가는교회', phone: '010-7192-9134', car: '11두 9477', arrival: '4/22', departure: '4/23' },
+    { floor: '7F', number: '703', type: 'DO', name: '최철식 목사님', church: '하나님믿교회', phone: '010-4757-1191', car: '229수 2531', arrival: '4/22', departure: '4/23' },
+    { floor: '7F', number: '706', type: 'DT', name: '최성기 교수님', church: '', phone: '', car: '', arrival: '4/22', departure: '4/23' },
+    { floor: '8F', number: '801', type: 'DO', name: '이승훈 목사님', church: '한우리침례교회', phone: '010-3152-9384', car: '13구 9818', arrival: '4/22', departure: '4/23' },
+  ],
+
   albumCategories: ['전체', '집회', '회의', '교제', '풍경'],
   albumItems: [
     { id: 1, cat: '집회', img: 'album1.png', label: '1부 저녁집회 현장', date: '4/20' },
@@ -4403,6 +4422,39 @@ function buildMeetings() {
 /* ==================================
    BUILD FACILITY + ROOMS (Visual Map)
    ================================== */
+/* ==================================
+   BUSAN ROOM MODAL
+   ================================== */
+function openBusanModal() {
+  const tableEl = document.getElementById('busanRoomTable');
+  if (tableEl && !tableEl.dataset.rendered) {
+    const floors = [...new Set(DATA.busanRooms.map(r => r.floor))];
+    let html = '';
+    floors.forEach(fl => {
+      const rooms = DATA.busanRooms.filter(r => r.floor === fl);
+      html += `<div style="margin-bottom:12px;">
+        <div style="font-size:0.7rem; font-weight:700; color:var(--accent); padding:6px 10px; background:var(--bg-card2); border-radius:8px; margin-bottom:6px;">${fl} 층</div>`;
+      rooms.forEach(r => {
+        html += `
+        <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:10px; padding:12px 14px; margin-bottom:8px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <span style="font-size:0.85rem; font-weight:700;">${r.number}호 <span style="font-size:0.7rem; background:var(--bg-card2); padding:2px 6px; border-radius:4px; color:var(--text-dim);">${r.type}</span></span>
+            <span style="font-size:0.7rem; color:var(--text-dim);">${r.arrival} → ${r.departure}</span>
+          </div>
+          <div style="font-size:0.9rem; font-weight:600;">${r.name}</div>
+          ${r.church ? `<div style="font-size:0.75rem; color:var(--text-dim); margin-top:2px;">⛪ ${r.church}</div>` : ''}
+          ${r.phone ? `<div style="font-size:0.75rem; color:var(--text-dim); margin-top:2px;">📞 ${r.phone}</div>` : ''}
+          ${r.car ? `<div style="font-size:0.75rem; color:var(--text-dim); margin-top:2px;">🚗 ${r.car}</div>` : ''}
+        </div>`;
+      });
+      html += `</div>`;
+    });
+    tableEl.innerHTML = html;
+    tableEl.dataset.rendered = 'true';
+  }
+  document.getElementById('busanModal').classList.add('show');
+}
+
 function buildRooms() {
   const container = document.getElementById('visualFacilityMap');
   if (!container) return;
