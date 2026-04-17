@@ -121,6 +121,7 @@ const DATA = {
     /* Day 1: 4월 20일 (월) */
     [
       { time: '15:00\n~\n17:30', title: '등록 및 접수', detail: '로비 및 안내 데스크', tags: ['arrival'], type: '' },
+      { time: '16:00\n~\n18:00', title: '선교 위원회 회의', detail: '해당자 참석\n장소: 지정 회의실', tags: ['meeting'], type: '' },
       { time: '17:30\n~\n18:40', title: '저녁 식사', detail: '리조트 식당', tags: ['meal'], type: 'meal' },
       { time: '19:00\n~\n21:00', title: '저녁 집회', detail: '찬양 · 특송 · 말씀\n설교: 김경석 목사\n장소: 대강당', tags: ['worship'], type: 'highlight' },
       { time: '21:00\n~\n22:30', title: '사무회의', detail: '참석 대상: 소속 목회자 전체\n장소: 대강당', tags: ['meeting'], type: '' }
@@ -141,7 +142,23 @@ const DATA = {
       { time: '11:00\n~\n11:50', title: '특송 및 강의 2', detail: '특송: 캄보디아 사역팀\n강의: 박창신 목사 / 폐회기도', tags: ['worship'], type: 'highlight' },
       { time: '12:00\n~\n13:00', title: '점심식사', detail: '리조트 식당', tags: ['meal'], type: 'meal' },
       { time: '13:00\n~\n15:00', title: '전국친교회운영위원회', detail: '지정 회의실', tags: ['meeting'], type: '' },
-      { time: '15:00\n~', title: '집으로', detail: '안전한 귀가를 기원합니다 🙏', tags: [], type: '' }
+      { time: '14:00\n~', title: '경주 리조트 출발', detail: '1박 2일 추가일정 시작', tags: ['arrival'], type: 'highlight' },
+      { time: '15:00\n~', title: '타지역 귀가', detail: '안전한 귀가를 기원합니다 🙏', tags: [], type: '' },
+      { time: '15:00\n~\n17:00', title: '카페 공극 방문', detail: '기장 위치 (약 2시간 소요)', tags: ['free'], type: 'free', mapLink: 'https://naver.me/GPdJOokT' },
+      { time: '17:30\n~\n18:30', title: '저녁 식사', detail: '오복식당 (약 1시간 소요)', tags: ['meal'], type: 'meal', mapLink: 'https://naver.me/5OQICo8u' },
+      { time: '19:00\n~', title: '숙소이동/체크인', detail: '숙소 배정 및 휴식', tags: ['arrival'], type: '', mapLink: 'https://naver.me/FK5vU9F9' },
+      { time: '19:30\n~\n20:30', title: '요트 투어', detail: '부산 요트 투어 (약 1시간 소요)', tags: ['free'], type: 'highlight' },
+      { time: '21:00\n~', title: '광안리 해변 산책', detail: '저녁 산책 일정', tags: ['free'], type: 'free' }
+    ],
+    /* Day 4: 4월 23일 (목) - 부산 추가 일정 */
+    [
+      { time: '07:00\n~\n08:00', title: '해수사우나 (선택)', detail: "숙소 근처 '광안해수월드' 추천\n(개별적으로 이용, 개인부담)", tags: ['free'], type: 'free', mapLink: 'https://naver.me/xeAfZxZ0' },
+      { time: '08:30\n~', title: '아침 식사', detail: "호텔 1층 로비 8:30분 집합\n호텔 근처 '해운대 오복돼지국밥 광안리 직영점' (식사비용지원)", tags: ['meal'], type: 'meal', mapLink: 'https://naver.me/xyTerLKB' },
+      { time: '10:00\n~', title: '숙소 체크아웃', detail: "짐 정리 및 체크아웃 완료", tags: ['arrival'], type: '' },
+      { time: '10:30\n~\n11:30', title: '흰여울마을', detail: "영도 흰여울마을 투어 (약 1시간 소요)", tags: ['free'], type: 'free', mapLink: 'https://naver.me/xLWAPvjS' },
+      { time: '11:30\n~\n12:30', title: '감천문화마을', detail: "감천문화마을 방문 (약 1시간 소요)", tags: ['free'], type: 'free', mapLink: 'https://naver.me/GJTi1vqQ' },
+      { time: '13:00\n~\n14:30', title: '점심 식사', detail: "자갈치 시장 1층 17~19번 성지상회 주문 후, 2층에서 식사\n(약 1시간 30분 소요)", tags: ['meal'], type: 'meal', mapLink: 'https://naver.me/GWW5I7Qa' },
+      { time: '14:30\n~', title: '자유일정 및 귀가', detail: "풍성한 교제 후 안전한 귀가를 기원합니다 🙏", tags: ['free'], type: 'highlight' }
     ]
   ],
 
@@ -196,6 +213,7 @@ const DATA = {
       sub: '일정에 맞춰 지정 장소에서 진행',
       details: [
         { icon: '🏫', label: '운영이사회', text: '신학교 운영이사회: 4/20(월) 오후 3시' },
+        { icon: '🌍', label: '선교위원회', text: '선교 위원회 회의: 4/20(월) 오후 4시~6시' },
         { icon: '📋', label: '사무회의', text: '4/20(월) 오후 9시 (대강당)' },
         { icon: '🎓', label: '동문회', text: '4/21(화) 오후 9시 (해당자)' },
         { icon: '⚙️', label: '운영위원회', text: '전국친교회운영위원회: 4/22(수) 오후 1시' }
@@ -4237,6 +4255,15 @@ function buildAll() {
    NAVIGATION
    ================================== */
 function showPage(name) {
+  // 관리자 전용 페이지 비밀번호 체크
+  if (name === 'attendees' || name === 'facility') {
+    const pwd = prompt("관리자 전용 메뉴입니다. 비밀번호를 입력해주세요.");
+    if (pwd !== "482148") {
+      alert("비밀번호가 일치하지 않습니다.");
+      return;
+    }
+  }
+
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
 
@@ -4316,13 +4343,19 @@ function buildSchedule() {
           <span class="schedule-time">${item.time}</span>
         </div>
         <div class="schedule-dot"></div>
-        <div class="schedule-content ${item.type}">
+        <div class="schedule-content ${item.type} ${item.mapLink ? 'has-link' : ''}">
           <div class="schedule-title">${item.title}</div>
           <div class="schedule-detail">${item.detail.replace(/\n/g, '<br/>')}</div>
           ${item.tags.length > 0 ? `
             <div class="schedule-tags">
               ${item.tags.map(t => `<span class="s-tag ${tagColors[t] || ''}">${tagLabels[t] || t}</span>`).join('')}
             </div>
+          ` : ''}
+          ${item.mapLink ? `
+            <a href="${item.mapLink}" target="_blank" class="schedule-link-icon" title="지도 보기">
+              <img src="map.png" alt="지도" class="map-icon-img" />
+              <span class="map-icon-text">길찾기</span>
+            </a>
           ` : ''}
         </div>
       </div>
@@ -4706,59 +4739,60 @@ function openNotice(id) {
    BUILD ALBUM
    ================================== */
 function buildAlbum() {
-  // Category tabs
+  // 깃허브 API 폴더 기반이므로 카테고리 탭은 숨김 처리
   const catsEl = document.getElementById('albumCats');
   if (catsEl) {
-    catsEl.innerHTML = DATA.albumCategories.map(cat => `
-      <button class="album-cat ${cat === '전체' ? 'active' : ''}" onclick="filterAlbum('${cat}', this)">${cat}</button>
-    `).join('');
+    catsEl.innerHTML = '';
   }
 
-  renderAlbumGrid('전체');
+  renderAlbumGrid();
 }
 
-function filterAlbum(cat, btn) {
-  currentAlbumCat = cat;
-  document.querySelectorAll('.album-cat').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderAlbumGrid(cat);
-}
+let githubPhotos = [];
 
-function renderAlbumGrid(cat) {
+async function renderAlbumGrid() {
   const container = document.getElementById('albumGrid');
   if (!container) return;
 
-  const items = cat === '전체' ? DATA.albumItems : DATA.albumItems.filter(i => i.cat === cat);
+  container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px;"><p style="color:var(--text-dim);">사진을 불러오고 있습니다...</p></div>';
 
-  if (items.length === 0) {
-    container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-dim);">검색된 사진이 없습니다.</div>';
-    return;
-  }
+  try {
+    // 깃허브 API 호출 (현재 bbfk2026 저장소의 사진을 불러옵니다)
+    const res = await fetch('https://api.github.com/repos/joyfulkim/bbfk2026/contents/img/gallery?t=' + new Date().getTime());
+    if (!res.ok) {
+       container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-dim);">사진이 곧 올라올 것입니다.</div>';
+       return;
+    }
+    const files = await res.json();
+    githubPhotos = files.filter(f => f.type === 'file' && /\.(jpg|jpeg|png|gif)$/i.test(f.name));
 
-  container.innerHTML = items.map(item => `
-    <div class="album-thumb" onclick="openPhoto(${item.id})">
-      <img src="${item.img}" class="album-thumb-img" loading="lazy" />
-      <div class="album-thumb-cat">${item.cat}</div>
-      <div class="album-thumb-info">
-        <div>${item.label}</div>
+    if (githubPhotos.length === 0) {
+      container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-dim);">사진이 곧 올라올 것입니다.</div>';
+      return;
+    }
+
+    container.innerHTML = githubPhotos.map((item, idx) => `
+      <div class="album-thumb" onclick="openPhotoGithub(${idx})">
+        <img src="${item.download_url}" class="album-thumb-img" loading="lazy" style="width:100%; height:100%; object-fit:cover;" />
       </div>
-    </div>
-  `).join('');
+    `).join('');
+  } catch (err) {
+    container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-dim);">사진이 곧 올라올 것입니다.</div>';
+  }
 }
 
-function openPhoto(id) {
-  const item = DATA.albumItems.find(x => x.id === id);
+function openPhotoGithub(idx) {
+  const item = githubPhotos[idx];
   if (!item) return;
 
   const content = document.getElementById('photoModalContent');
   content.innerHTML = `
     <div style="background:black; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-      <img src="${item.img}" style="width:100%; max-height:75vh; object-fit:contain; animation: zoomIn 0.3s ease-out;" />
+      <img src="${item.download_url}" style="width:100%; max-height:75vh; object-fit:contain; animation: zoomIn 0.3s ease-out;" />
       <div style="padding: 24px; width:100%; color:white; background:linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
-        <div style="font-size:1.1rem; font-weight:700; margin-bottom:4px;">${item.label}</div>
-        <div style="font-size:0.8rem; color:rgba(255,255,255,0.6);">${item.cat} · ${item.date || ''}</div>
+        <div style="font-size:1.1rem; font-weight:700; margin-bottom:4px;">${item.name}</div>
         <div style="margin-top:20px; display:flex; gap:10px;">
-          <button class="upload-btn" style="flex:1; justify-content:center; background:rgba(255,255,255,0.15);" onclick="alert('📸 사진 저장 기능은 브라우저 메뉴를 이용해 주세요.')">저장하기</button>
+          <button class="upload-btn" style="flex:1; justify-content:center; background:rgba(255,255,255,0.15);" onclick="alert('📸 다운로드는 이미지를 길게 눌러 기기에 저장하세요.')">저장안내</button>
           <button class="upload-btn" style="flex:1; justify-content:center;" onclick="closeModal('photoModal')">닫기</button>
         </div>
       </div>
